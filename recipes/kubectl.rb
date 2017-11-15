@@ -5,7 +5,7 @@
 
 download_url = "https://storage.googleapis.com/kubernetes-release/release/v#{node[:kube][:kubectl][:version]}/bin/darwin/amd64/kubectl"
 
-kubectl_directory = "#{node[:kube][:kubectl][:install_prefix]}/#{node[:kube][:kubectl][:version]}"
+kubectl_directory = "#{node[:kube][:kubectl][:base_directory]}/#{node[:kube][:kubectl][:version]}"
 kubectl_file_path = "#{kubectl_directory}/kubectl"
 
 directory kubectl_directory do
