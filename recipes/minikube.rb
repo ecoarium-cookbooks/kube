@@ -12,7 +12,7 @@ minikube_file_path = "#{minikube_directory}/minikube"
 
 directory minikube_directory do
   owner ENV['USER']
-  recursive
+  recursive true
 end
 
 remote_file minikube_file_path do

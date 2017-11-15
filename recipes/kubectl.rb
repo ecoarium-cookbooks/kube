@@ -10,7 +10,7 @@ kubectl_file_path = "#{kubectl_directory}/kubectl"
 
 directory kubectl_directory do
   owner ENV['USER']
-  recursive
+  recursive true
 end
 
 remote_file kubectl_file_path do
