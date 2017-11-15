@@ -3,6 +3,8 @@
 # Recipe:: minikube
 #
 
+include_recipe 'kube::kubectl'
+
 download_url = "https://storage.googleapis.com/minikube/releases/v#{node[:kube][:minikube][:version]}/minikube-darwin-amd64"
 
 minikube_directory = "#{node[:kube][:minikube][:install_prefix]}/#{node[:kube][:minikube][:version]}"
